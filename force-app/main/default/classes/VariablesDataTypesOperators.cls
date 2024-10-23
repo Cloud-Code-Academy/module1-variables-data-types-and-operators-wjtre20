@@ -209,10 +209,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Final Integer  MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
+        Final Integer  millisecondsPerMinute = 60000; // Make this value a constant
         Integer milliseconds;
         if(minutes != null){
-            milliseconds = minutes * MILLISECONDS_PER_MINUTE;
+            milliseconds = minutes * millisecondsPerMinute;
         }
         return milliseconds;
     }    
@@ -354,8 +354,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        FINAL Integer WEEKS_PER_MONTH = 4;
-        Decimal monthlyPaycheck = hourlyRate * numberOfHours * WEEKS_PER_MONTH;
+        FINAL Integer weeksPerMonth = 4;
+        Decimal monthlyPaycheck = hourlyRate * numberOfHours * weeksPerMonth;
         return monthlyPaycheck; // Replace null with the variable you used to store the result
     }
 
